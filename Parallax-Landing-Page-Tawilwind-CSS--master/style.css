@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.card {
+  @apply transition-all duration-500 xs:basis-80 hover:basis-96;
+}
+
+@layer utilities{
+    .perspective {
+        perspective: 100px;
+    }
+    .preserve-3d {
+        transform-style: preserve-3d;
+    }
+    .distance-1 {
+        transform: translateZ(-100px) scale(2);
+    }
+    .distance-2 {
+        transform: translateZ(-50px) scale(1.5);
+    }
+}
